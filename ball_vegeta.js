@@ -10,6 +10,7 @@ document.getElementById('red-ball').addEventListener('click',sumScorePoints);
 document.getElementById('red-ball').addEventListener('click',remainingTime);
 
 
+
 //Randomly move of the red dot
 function redBallMovement() {
 
@@ -53,3 +54,6 @@ function remainingTime(){
 //to reduce the time we have to setInterval
 
 setInterval(remainingTime,1000);
+
+//bouncing black-ball
+
