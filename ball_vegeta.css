@@ -1,9 +1,17 @@
+/*body background style*/
+
+body{
+    background-image: url(./img/jason-leung-hsS6jTr-pns-unsplash.jpg);
+    background-repeat: no-repeat;
+}
+
+
 /*space game styling*/
 .space-game{
-    width: 600px;
+    width: 900px;
     height: 600px;
     border: 5px dashed rgb(8, 8, 8);
-    background-color: chartreuse;
+    background-color: rgb(241, 244, 245);
     align-items: center;
     margin: auto;
     
@@ -36,20 +44,94 @@
 
 
 }
+.black-ball:nth-child(1),
+.black-ball:nth-child(2),
+.black-ball:nth-child(3),
+.black-ball:nth-child(4),
+.black-ball:nth-child(5){
 
-#black-ball{
-
-    width: 25px;
-    height: 25px;
+    width: 70px;
+    height: 70px;
     border: 2px solid rgb(238, 13, 13);
     background-color: rgb(14, 13, 13);
-    border-radius: 20px;
-    position: absolute;
+    border-radius: 50%;
+    margin-top: 68px;
+    animation: PopUp 12s ease-in infinite;
+
+
      
 }
 
+.black-ball:nth-child(6),
+.black-ball:nth-child(7),
+.black-ball:nth-child(8)
+{
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgb(238, 13, 13);
+    background-color: rgb(232, 235, 44);
+    border-radius: 20px;
+    margin: auto;
+    display: inline-block;
+    align-items: center;
+    justify-content:center;
+    animation: bouncy 15s ease-in infinite;
+    margin-left: 100px;
+}
 
-.bounceB{
+.black-ball:nth-child(9),
+.black-ball:nth-child(10),
+.black-ball:nth-child(11){
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgb(238, 13, 13);
+    background-color: rgb(232, 235, 44);
+    border-radius: 20px;
+    margin: auto;
+    display: inline-block;
+    align-items: center;
+    justify-content:center;
+    animation: bouncy 30s ease-in infinite;
+    margin-left: 80px;
+}
+
+.panel{
+    border: 2px solid rgb(73, 54, 54);
+    width: 500px;
+    height: 1px;
+    margin: auto;
+}
+
+@keyframes bouncy {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-550px);
+
+    }
+    100%{
+        transform: translateY(0px);
+
+    }
+}
+
+@keyframes PopUp {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(+820px);
+
+    }
+    100%{
+        transform: translateX(0px);
+
+    }
+}
+
+
+/*.bounceB{
     animation: bounceB 1.03s ease-in 0s infinite alternate;
 }
 
@@ -61,5 +143,5 @@
     to{
         transform: translateY(calc(100vh - 10vmin));
     }
-}
+}*/
 

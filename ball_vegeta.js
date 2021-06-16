@@ -9,12 +9,14 @@ document.getElementById('red-ball').addEventListener('click',sumScorePoints);
 //call an event remaining the time while clicking the red dot
 document.getElementById('red-ball').addEventListener('click',remainingTime);
 
+//call an event when clicking the black dot you lose
+document.getElementById('pelota').addEventListener('click',decreasingScoring);
 
 
 //Randomly move of the red dot
 function redBallMovement() {
 
-    randNum = Math.round(Math.random()*400);
+    randNum = Math.round(Math.random()*580);
 
     document.getElementById('red-ball').style.margin = randNum + "px";
 
@@ -55,5 +57,13 @@ function remainingTime(){
 
 setInterval(remainingTime,1000);
 
-//bouncing black-ball
+//fuction decreasingScoring if click on the black dot
+
+function decreasingScoring(){
+    document.getElementById('score').innerHTML = 'Score: ' + points-- + "/" + goal;
+    console.log('Un punto menos');
+    var ball = document.getElementById('pelota');
+    ball.style.backgroundColor = 'red';
+    //ball.style.animation = '2s ease-in';
+}
 
