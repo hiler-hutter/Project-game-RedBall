@@ -1,5 +1,6 @@
 /*body background style*/
 
+
 body{
     background-image: url(./img/jason-leung-hsS6jTr-pns-unsplash.jpg);
     background-repeat: no-repeat;
@@ -10,7 +11,7 @@ body{
 .space-game{
     width: 900px;
     height: 600px;
-    border: 5px dashed rgb(8, 8, 8);
+    border: 1px dashed rgb(8, 8, 8);
     background-color: rgb(241, 244, 245);
     align-items: center;
     margin: auto;
@@ -30,47 +31,92 @@ body{
 }
 
 #main-head{
-    border: 5px solid rgb(0, 229, 255);
-    background-color: rgb(93, 86, 86);
-    color: rgb(231, 10, 10);
+    /*border: 5px solid rgb(0, 229, 255);*/
+    /*background-color:white;*/
+    color: rgb(15, 13, 13);
     font-size: 2em;
-    width: 600px;
-    height: 80px;
+    width: 900px;
+    height: 150px;
     margin: auto;
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
 
 
 }
-.black-ball:nth-child(1),
-.black-ball:nth-child(2),
-.black-ball:nth-child(3),
-.black-ball:nth-child(4),
-.black-ball:nth-child(5){
+#player{
+    width: 250px;
+    height: 150px;
+    background-color: rgb(175, 129, 121);
+}
+
+#player img{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#score{
+    width: 250px;
+    height: 75px;
+    background-color: rgb(175, 129, 121);
+    text-align: center;
+   
+}
+
+#time{
+    width: 250px;
+    height: 75px;
+    background-color: rgb(175, 129, 121);
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.black-ball:nth-child(2)
+{
 
     width: 70px;
     height: 70px;
     border: 2px solid rgb(238, 13, 13);
     background-color: rgb(14, 13, 13);
     border-radius: 50%;
-    margin-top: 68px;
+    margin-top: 100px;
     animation: PopUp 12s ease-in infinite;
+   
+}
+.black-ball:nth-child(3)
+{
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgb(238, 13, 13);
+    background-color: rgb(14, 13, 13);
+    border-radius: 50%;
+    margin-top: 100px;
 
-
-     
+    animation: PopUp 18s ease-in infinite;
 }
 
-.black-ball:nth-child(6),
-.black-ball:nth-child(7),
-.black-ball:nth-child(8)
+.black-ball:nth-child(4){
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgb(238, 13, 13);
+    background-color: rgb(14, 13, 13);
+    border-radius: 50%;
+    margin-top: 65px;
+    animation: PopUp 22s ease-in infinite;
+}
+
+.black-ball:nth-child(5)
+
 {
-    width: 25px;
-    height: 25px;
+    width: 39px;
+    height: 39px;
     border: 2px solid rgb(238, 13, 13);
     background-color: rgb(232, 235, 44);
-    border-radius: 20px;
+    border-radius: 50%;
     margin: auto;
     display: inline-block;
     align-items: center;
@@ -79,35 +125,55 @@ body{
     margin-left: 100px;
 }
 
-.black-ball:nth-child(9),
-.black-ball:nth-child(10),
-.black-ball:nth-child(11){
-    width: 25px;
-    height: 25px;
+.black-ball:nth-child(6){
+    width: 50px;
+    height: 50px;
     border: 2px solid rgb(238, 13, 13);
     background-color: rgb(232, 235, 44);
-    border-radius: 20px;
+    border-radius: 50%;
     margin: auto;
     display: inline-block;
     align-items: center;
     justify-content:center;
-    animation: bouncy 30s ease-in infinite;
-    margin-left: 80px;
+    animation: bouncy 20s ease-in infinite;
+    margin-left: 100px;
 }
 
-.panel{
-    border: 2px solid rgb(73, 54, 54);
-    width: 500px;
-    height: 1px;
+.black-ball:nth-child(7){
+    width: 85px;
+    height: 85px;
+    border: 2px solid rgb(238, 13, 13);
+    background-color: rgb(232, 235, 44);
+    border-radius: 50%;
     margin: auto;
+    display: inline-block;
+    align-items: center;
+    justify-content:center;
+    animation: bouncy 25s ease-in infinite;
+    margin-left: 200px;
 }
+
+.black-ball:nth-child(8){
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgb(238, 13, 13);
+    background-color: rgb(232, 235, 44);
+    border-radius: 50%;
+    margin: auto;
+    display: inline-block;
+    align-items: center;
+    justify-content:center;
+    animation: bouncy 35s ease-in infinite;
+    margin-left: 200px;
+}
+
 
 @keyframes bouncy {
     0%{
         transform: translateY(0px);
     }
     50%{
-        transform: translateY(-550px);
+        transform: translateY(-490px);
 
     }
     100%{
@@ -130,18 +196,4 @@ body{
     }
 }
 
-
-/*.bounceB{
-    animation: bounceB 1.03s ease-in 0s infinite alternate;
-}
-
-
-@keyframes bounceB {
-    from{
-        transform: translateY(0px);
-    }
-    to{
-        transform: translateY(calc(100vh - 10vmin));
-    }
-}*/
 
