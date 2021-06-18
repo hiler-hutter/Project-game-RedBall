@@ -97,8 +97,8 @@ function decreasingScoring(){
 
 function decreasingBlack1(){
     document.getElementById('score').innerHTML = 'Score: ' + points-- + "/" + goal;
-    var ball = document.getElementById('pelota1');
-    ball.style.backgroundColor = 'red';
+    var ball1 = document.getElementById('pelota1');
+    ball1.style.backgroundColor = 'red';
 
 }
 
@@ -106,8 +106,8 @@ function decreasingBlack1(){
 
 function decreasingBlack2(){
     document.getElementById('score').innerHTML = 'Score: ' + points-- + "/" + goal;
-    var ball = document.getElementById('pelota2');
-    ball.style.backgroundColor = 'red';
+    var ball2 = document.getElementById('pelota2');
+    ball2.style.backgroundColor = 'red';
 
 }
 
@@ -115,8 +115,8 @@ function decreasingBlack2(){
 
 function decreasingYellow1(){
     document.getElementById('score').innerHTML = 'Score: ' + points-- + "/" + goal;
-    var ball = document.getElementById('pelota3');
-    ball.style.backgroundColor = 'red';
+    var ball3 = document.getElementById('pelota3');
+    ball3.style.backgroundColor = 'red';
 
 }
 
@@ -124,8 +124,8 @@ function decreasingYellow1(){
 
 function decreasingYellow2(){
     document.getElementById('score').innerHTML = 'Score: ' + points-- + "/" + goal;
-    var ball = document.getElementById('pelota4');
-    ball.style.backgroundColor = 'red';
+    var ball4 = document.getElementById('pelota4');
+    ball4.style.backgroundColor = 'red';
 
 }
 
@@ -133,8 +133,8 @@ function decreasingYellow2(){
 
 function decreasingYellow3(){
     document.getElementById('score').innerHTML = 'Score: ' + points-- + "/" + goal;
-    var ball = document.getElementById('pelota5');
-    ball.style.backgroundColor = 'red';
+    var ball5 = document.getElementById('pelota5');
+    ball5.style.backgroundColor = 'red';
 
 }
 
@@ -142,8 +142,8 @@ function decreasingYellow3(){
 
 function decreasingYellow4(){
     document.getElementById('score').innerHTML = 'Score: ' + points-- + "/" + goal;
-    var ball = document.getElementById('pelota6');
-    ball.style.backgroundColor = 'red';
+    var ball6 = document.getElementById('pelota6');
+    ball6.style.backgroundColor = 'red';
     
 
 }
