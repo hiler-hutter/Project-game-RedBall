@@ -194,4 +194,62 @@ body{
     }
 }
 
+.modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    animation: modal 1s forwards;
+    visibility: hidden;
+    opacity: 0;
+
+
+
+}
+
+#cerrar{
+    display: none;
+}
+
+#cerrar + label{
+    position: fixed;
+    color: rgb(17, 15, 15);
+    font-size: 25px;
+    z-index: 50;
+    background: rgb(174, 21, 21);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    right: 10px;
+    cursor: pointer;
+
+    animation: modal 2s forwards;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+#cerrar:checked + label, #cerrar:checked ~ .modal {
+    display: none;
+}
+
+.contenido{
+    width: 75%;
+    height: 75%;
+    margin: auto;
+}
+
+
+
+@keyframes modal {
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
 
